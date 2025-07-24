@@ -58,6 +58,35 @@ header{
     color: var(--secondary-color);
 }
 
+/* banner style */
+
+.banner-container{
+    justify-content: space-between;
+    margin: 7.5rem 0;
+    align-items: end;
+}
+
+.banner-container img{
+    max-width: 100%;
+}
+
+.banner-title{
+    font-family: "Noto Serif", serif;
+    font-size: 4.06rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#always{
+    color: var(--secondary-color);
+}
+
+.banner-description{
+    font-size: 1.4rem;
+    color: var(--gray-color);
+}
+
+
 /* main style */
 
 /* footer style */
@@ -66,3 +95,38 @@ header{
 
 /* mobile device */
 
+@media screen and (max-width: 576px) {
+    
+    header{
+        max-width: 100%;
+    }
+
+    .nav-container{
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .nav-item1{
+        display: none;
+    }
+    .nav-logo{
+        max-width: 30%;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 3.5rem;
+    }
+
+    .banner-text{
+        padding: 0 10px;
+    }
+
+    .banner-title{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .banner-description{
+        font-size: 1rem;
+    }
+}
