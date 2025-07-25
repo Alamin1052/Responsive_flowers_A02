@@ -2,6 +2,8 @@
 
 *{
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /* Shared style */
@@ -89,14 +91,12 @@ header{
 
 
 /* main style */
-main{
-    max-width: 85%;
-    margin: 0 auto;
-}
 
 /* Plant section style */
 
 .plant-container{
+    max-width: 85%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 7.5rem;
 }
@@ -160,6 +160,8 @@ main{
 /* plants lover section style */
 
 .Plant-lover-container{
+    max-width: 85%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 60px;
@@ -204,7 +206,107 @@ main{
     
 }
 
+/* deals section style */
+
+.deals-container{
+    max-width: 85%;
+    margin: 0 auto;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 100px;
+}
+
+.deals-text{
+    text-align: center;
+}
+
+#latest{
+    color: var(--primary-color);
+}
+
+/* join style */
+
+#join-container{
+    max-width: 100%;
+    background-image: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+
+}
+
+#join-container{
+    display: flex;
+    justify-content: center;
+}
+
+.join-content{
+    max-width: 830px;
+    text-align: center;
+    margin: auto 0px;
+}
+
+.join-titile{
+    font-family: "Noto Serif", serif;
+    font-size: 3.15rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#email{
+    width: 644px;
+    padding: 8px 20px;
+    border: none;
+
+}
+
+.subscribe{
+    width:  150px;
+    background-color: var(--primary-color);
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    position: relative;
+    left: -8px;
+}
+
 /* footer style */
+
+footer{
+    max-width: 85%;
+    margin: 50px auto;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-container{
+    justify-content: space-evenly;
+}
+
+.footer-text{
+    max-width: 359px;
+    color: var(--gray-color);
+    font-size: 1.375rem;
+    margin-top: 10px;
+}
+
+.footer-content li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer-content li a{
+    text-decoration: none;
+    color: var(--gray-color);
+}
+
+.footer-icon img{
+    margin-right: 15px;
+}
+
+.icon-twitter{
+    margin-bottom: 7px;
+}
 
 /* resposive style */
 
@@ -228,6 +330,7 @@ main{
     }
 
     .banner-container{
+        max-width: 100%;
         flex-direction: column-reverse;
         gap: 3.5rem;
     }
@@ -246,7 +349,15 @@ main{
         font-size: 1rem;
     }
 
-    main{
+    .title-text{
+        font-size: 1.5rem;
+    }
+
+    .description-text{
+        font-size: 1rem;
+    }
+
+    .plant-container{
         max-width: 95%;
     }
     .card-box{
@@ -254,6 +365,7 @@ main{
     }
 
     .Plant-lover-container{
+        max-width: 95%;
         flex-direction: column;
     }
 
@@ -272,4 +384,29 @@ main{
     .plant-br{
         display: none;
     }
+
+    .join-content{
+        max-width: 320px;
+    }
+
+    .join-titile{
+        font-size: 1rem;
+    }
+
+    #email{
+        width: 218px;
+    }
+
+    .subscribe{
+        width: 95px
+    }
+
+    footer{
+        max-width: 95%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
 }
