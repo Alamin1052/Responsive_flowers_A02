@@ -223,19 +223,90 @@ header{
     color: var(--primary-color);
 }
 
+.deals-card{
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.small,
+.big-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 206px;
+    width: 366px;
+    border-radius: 14px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.small::before,
+.big-card::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+    z-index: -1;
+}
+
+
+.card-1{
+    background-image: url(./assets/deal-bloom.png);
+    margin-bottom: 10px;
+}
+
+.card-2{
+    background-image: url(./assets/deal-ana.png);
+}
+
+.small-card-text{
+    color: white;
+    font-size: 1.25rem;
+}
+
+.small a{
+    color:  white;
+    font-size: 1rem;
+}
+
+
+.big-card{
+    background-image: url(./assets/deal-zabo.png);
+    width: 753px;
+    height: 423px;
+}
+
+.big-card-text{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.big-card a{
+    color: white;
+    font-size: 1.8rem;
+}
+
 /* join style */
 
-#join-container{
+.join-container{
     max-width: 100%;
     background-image: url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 100vh;
+    height: 100vh;
 
 }
 
-#join-container{
+.join-container{
     display: flex;
     justify-content: center;
 }
@@ -383,6 +454,43 @@ footer{
 
     .plant-br{
         display: none;
+    }
+
+    .deals-container{
+        max-width: 95%;
+    }
+
+    .deals-card{
+        flex-direction: column;
+    }
+
+    .left-card{
+        max-width: 100%;
+    }
+
+    .small{
+        width: 100%;
+    }
+
+    .right-card{
+        max-width: 100%;
+    }
+
+    .big-card{
+        width: 100%;
+        height: 206px;
+    }
+
+    .big-card-text{
+        font-size: 1.25rem;
+    }
+
+    .big-card a{
+        font-size: 1rem;
+    }
+
+    .join-container{
+        height: 300px;
     }
 
     .join-content{
